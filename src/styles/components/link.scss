@@ -1,0 +1,13 @@
+.link {
+	display: inline-flex;
+	align-items: center;
+	gap: var(--size-1);
+
+	border-bottom: var(--size-px) dashed var(--color-gray-600);
+	padding-bottom: var(--size-1);
+
+	&:hover {
+		border-color: var(--color-gray-500);
+		cursor: pointer;
+	}
+}

@@ -1,6 +1,6 @@
 /** @type {import('pollen-css').Config} */
 export default (pollen) => ({
-	output: { css: './src/styles/pollen.css', json: './src/styles/pollen.json' },
+	output: { css: './src/styles/pollen.css', json: './uno/pollen.json' },
 	modules: {
 		font: {
 			...pollen.font,
@@ -152,6 +152,10 @@ export default (pollen) => ({
 			'orange-700': '#f76707',
 			'orange-800': '#e8590c',
 			'orange-900': '#d9480f',
+		},
+		size: {
+			...pollen.size,
+			'2px': '2px',
 		},
 	},
 });

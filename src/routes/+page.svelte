@@ -7,5 +7,8 @@
 </svelte:head>
 
 <section class="contained-xs p-4">
-	<button>Add a new habit</button>
+	<a class="btn" href="add">
+		<div class="i-tabler-plus" />
+		Add a new habit
+	</a>
 </section>

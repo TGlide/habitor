@@ -1,9 +1,15 @@
-@import './pollen.css';
 @import './reset.css';
+@import './pollen.css';
+@import './components/index.scss';
+
+* {
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+}
 
 body {
-  background-color: var(--color-black);
-  color: var(--color-white);
+	background-color: var(--color-black);
+	color: var(--color-white);
 
-  font-family: var(--font-sans);
+	font-family: var(--font-sans);
 }
