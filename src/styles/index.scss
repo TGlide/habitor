@@ -1,0 +1,9 @@
+@import './pollen.css';
+@import './reset.css';
+
+body {
+  background-color: var(--color-black);
+  color: var(--color-white);
+
+  font-family: var(--font-sans);
+}

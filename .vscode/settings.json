@@ -13,7 +13,8 @@
     "html",
     "jsx",
     "tsx",
-    "svelte"
+    "svelte",
+    "scss"
   ],
   "editor.quickSuggestions": {
     "strings": "on"
