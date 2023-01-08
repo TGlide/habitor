@@ -1,4 +1,5 @@
 <script lang="ts">
+	import { habits } from '$stores/habit';
 </script>
 
 <svelte:head>
@@ -11,4 +12,5 @@
 		<div class="i-tabler-plus" />
 		Add a new habit
 	</a>
+	{JSON.stringify($habits)}
 </section>

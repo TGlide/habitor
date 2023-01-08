@@ -7,7 +7,7 @@ export const flex: Rule[] = [
 	['flex-inline', { display: 'inline-flex' }],
 
 	// flex
-	[/^flex-(.+)$/, ([, d]) => ({ flex: d })],
+	[/^flex-(\d+)$/, ([, d]) => ({ flex: d })],
 	['flex-1', { flex: '1 1 0%' }],
 	['flex-auto', { flex: '1 1 auto' }],
 	['flex-initial', { flex: '0 1 auto' }],

@@ -3,21 +3,20 @@
 	align-items: center;
 	gap: var(--size-1);
 
-	background-color: var(--color-pink-700);
+	background-color: var(--color-pink-7);
 	border-radius: var(--radius-md);
-	border-bottom: 2px solid var(--color-pink-100);
+	border-bottom: 2px solid var(--color-pink-3);
 
 	padding: var(--size-2) var(--size-3);
 
 	&:hover {
-		background-color: var(--color-pink-800);
+		background-color: var(--color-pink-8);
 		cursor: pointer;
 		border-bottom-width: 3px;
 		translate: 0 -1px;
 	}
 
 	&:active {
-		background-color: var(--color-pink-900);
 		border-bottom-width: 1px;
 		translate: 0 1px;
 	}

@@ -7,32 +7,19 @@ export function makeGlobalStaticRules(prefix: string, property?: string) {
 	);
 }
 
-export function createDirectionRules(
-	classFormat: (direction: string) => string,
-	propFormat: (direction: string) => string,
-	value: string,
-): Rule[] {
-	return Object.entries(directionMap).reduce<Rule[]>((acc, [classKey, propKeys]) => {
-		return [
-			...acc,
-			...propKeys.map<Rule>((k) => {
-				return [`${classFormat(classKey)}`, { [propFormat(k)]: value }];
-			}),
-		];
-	}, []);
+function createRulesFn(map: Record<string, string[]>) {
+	return function createRules(
+		classFormat: (corner: string) => string,
+		propFormat: (corner: string) => string,
+		value: string,
+	): Rule[] {
+		return Object.entries(map).reduce<Rule[]>((acc, [classKey, propKeys]) => {
+			const valueMap = Object.fromEntries(propKeys.map((k) => [propFormat(k), value]));
+
+			return [...acc, [`${classFormat(classKey)}`, valueMap]];
+		}, []);
+	};
 }
 
-export function createCornerRules(
-	classFormat: (corner: string) => string,
-	propFormat: (corner: string) => string,
-	value: string,
-): Rule[] {
-	return Object.entries(cornerMap).reduce<Rule[]>((acc, [classKey, propKeys]) => {
-		return [
-			...acc,
-			...propKeys.map<Rule>((k) => {
-				return [`${classFormat(classKey)}`, { [propFormat(k)]: value }];
-			}),
-		];
-	}, []);
-}
+export const createDirectionRules = createRulesFn(directionMap);
+export const createCornerRules = createRulesFn(cornerMap);

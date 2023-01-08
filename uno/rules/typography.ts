@@ -15,7 +15,7 @@ export const typography: Rule[] = [
 	}),
 	// Font Weight
 	...Object.keys(pollen.weight).map((key) => {
-		return [`weight-${key}`, { 'font-weight': `var(--weight-${key})` }] as Rule;
+		return [`weight-${key}`, { 'font-variation-settings': `'wght' var(--weight-${key})` }] as Rule;
 	}),
 	// Line Height
 	...Object.keys(pollen.line).map((key) => {

@@ -11,7 +11,7 @@ export const border: Rule[] = [
 		return [
 			...acc,
 			...createDirectionRules(
-				(d) => `border${d}-${style}`,
+				(d) => (d ? `border-${d}-${style}` : `border-${style}`),
 				(d) => `border${d}-style`,
 				style,
 			),
@@ -22,7 +22,7 @@ export const border: Rule[] = [
 		return [
 			...acc,
 			...createDirectionRules(
-				(d) => `border${d}-${key}`,
+				(d) => (d ? `border-${d}-${key}` : `border-${key}`),
 				(d) => `border${d}-color`,
 				`var(--color-${key})`,
 			),
@@ -33,7 +33,7 @@ export const border: Rule[] = [
 		return [
 			...acc,
 			...createDirectionRules(
-				(d) => `border${d}-${key}`,
+				(d) => (d ? `border-${d}-${key}` : `border-${key}`),
 				(d) => `border${d}-width`,
 				`var(--size-${key})`,
 			),
@@ -44,7 +44,7 @@ export const border: Rule[] = [
 		return [
 			...acc,
 			...createCornerRules(
-				(d) => `rounded${d}-${key}`,
+				(d) => (d ? `rounded-${d}-${key}` : `rounded-${key}`),
 				(d) => `border${d}-radius`,
 				`var(--radius-${key})`,
 			),

@@ -14,9 +14,10 @@ const config = {
 			$components: './src/components',
 			$stores: './src/stores',
 			$utils: './src/utils',
-			$UI: './src/UI'
-		}
-	}
+			$UI: './src/UI',
+			$: './src',
+		},
+	},
 };
 
 export default config;

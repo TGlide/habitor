@@ -3,11 +3,13 @@
 	align-items: center;
 	gap: var(--size-1);
 
-	border-bottom: var(--size-px) dashed var(--color-gray-600);
-	padding-bottom: var(--size-1);
+	border-bottom: var(--size-px) dashed var(--color-gray-6);
+	// padding-bottom: var(--size-1);
+
+	line-height: var(--line-md);
 
 	&:hover {
-		border-color: var(--color-gray-500);
+		border-color: var(--color-gray-5);
 		cursor: pointer;
 	}
 }
