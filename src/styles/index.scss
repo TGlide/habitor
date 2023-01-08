@@ -19,4 +19,7 @@ body {
 	color: var(--color-gray-0);
 
 	font-family: var(--font-sans);
+
+	/* Prevent zoom gestures */
+	touch-action: pan-x pan-y;
 }
