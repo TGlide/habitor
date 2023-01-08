@@ -52,7 +52,7 @@
 <style lang="scss">
 	section {
 		max-width: var(--width-xs);
-		height: var(--size-screen-h);
+		height: var(--size-full);
 		padding: var(--size-4);
 		margin: 0 auto;
 

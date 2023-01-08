@@ -8,3 +8,9 @@
 <main>
 	<slot />
 </main>
+
+<style lang="scss">
+	main {
+		height: var(--size-full);
+	}
+</style>
