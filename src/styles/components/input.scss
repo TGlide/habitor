@@ -1,0 +1,26 @@
+.checkbox {
+	border: 2px solid var(--color-sand-1);
+	border-radius: var(--radius-sm);
+	cursor: pointer;
+
+	width: var(--size-6);
+	height: var(--size-6);
+
+	transition: background 100ms ease;
+
+	&:checked {
+		background: var(--color-green-8);
+		border-color: var(--color-green-1);
+
+		&::after {
+			@apply i-tabler-check;
+
+			color: var(--color-green-1);
+			content: '';
+			position: absolute;
+			top: 50%;
+			left: 50%;
+			transform: translate(-50%, -50%);
+		}
+	}
+}

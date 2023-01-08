@@ -39,8 +39,8 @@
 		<button class="btn btn-sand flex-1" on:click={() => (date = date.subtract(1, 'days'))}>
 			<div class="i-tabler-chevron-left" />
 		</button>
-		<a class="btn flex-3" href="add">
-			<div class="i-tabler-plus" />
+		<a class="btn-green flex-3" href="add">
+			<div class="i-tabler-leaf" />
 			New habit
 		</a>
 		<button class="btn btn-sand flex-1" on:click={() => (date = date.add(1, 'days'))}>
@@ -74,33 +74,6 @@
 			position: absolute;
 			bottom: var(--size-4);
 			right: var(--size-4);
-		}
-	}
-
-	.checkbox {
-		border: 2px solid var(--color-sand-1);
-		border-radius: var(--radius-sm);
-		cursor: pointer;
-
-		width: var(--size-6);
-		height: var(--size-6);
-
-		transition: background 100ms ease;
-
-		&:checked {
-			background: var(--color-teal-8);
-			border-color: var(--color-teal-1);
-
-			&::after {
-				@apply i-tabler-check;
-
-				color: var(--color-teal-1);
-				content: '';
-				position: absolute;
-				top: 50%;
-				left: 50%;
-				transform: translate(-50%, -50%);
-			}
 		}
 	}
 </style>

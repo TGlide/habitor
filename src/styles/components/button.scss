@@ -1,6 +1,6 @@
 .btn {
-	$color: 'pink';
-	$n: 7;
+	$color: 'gray';
+	$n: 9;
 	--btn-bg: var(--color-#{$color}-#{$n});
 	--btn-border: var(--color-#{$color}-#{$n - 4});
 
@@ -65,14 +65,24 @@
 }
 
 .btn-sand {
+	@extend .btn;
 	$color: 'sand';
 	$n: 9;
 	--btn-bg: var(--color-#{$color}-#{$n});
 	--btn-border: var(--color-#{$color}-#{$n - 4});
 }
 
-.btn-gray {
-	$color: 'gray';
+.btn-pink {
+	@extend .btn;
+	$color: 'pink';
+	$n: 7;
+	--btn-bg: var(--color-#{$color}-#{$n});
+	--btn-border: var(--color-#{$color}-#{$n - 4});
+}
+
+.btn-green {
+	@extend .btn;
+	$color: 'green';
 	$n: 9;
 	--btn-bg: var(--color-#{$color}-#{$n});
 	--btn-border: var(--color-#{$color}-#{$n - 4});
