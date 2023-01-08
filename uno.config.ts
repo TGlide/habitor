@@ -2,6 +2,7 @@ import { extractorSvelte, Rule } from '@unocss/core';
 import presetIcons from '@unocss/preset-icons';
 import rules from './uno/rules';
 import type { VitePluginConfig } from '@unocss/vite';
+import transformerDirectives from '@unocss/transformer-directives';
 
 const config: VitePluginConfig = {
 	extractors: [extractorSvelte],
@@ -13,6 +14,8 @@ const config: VitePluginConfig = {
 			return acc;
 		}, []),
 	],
+	// eslint-disable-next-line @typescript-eslint/no-explicit-any
+	transformers: [transformerDirectives() as any],
 };
 
 export default config;

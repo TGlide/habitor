@@ -14,8 +14,10 @@ specifiers:
   '@typescript-eslint/parser': ^5.45.0
   '@unocss/core': ^0.48.0
   '@unocss/preset-icons': ^0.48.3
+  '@unocss/transformer-directives': ^0.48.3
   '@unocss/vite': ^0.48.0
   appwrite: ^10.2.0
+  dayjs: ^1.11.7
   eslint: ^8.28.0
   eslint-config-prettier: ^8.5.0
   eslint-plugin-svelte3: ^4.0.0
@@ -50,7 +52,9 @@ devDependencies:
   '@typescript-eslint/parser': 5.47.1_iukboom6ndih5an6iafl45j2fe
   '@unocss/core': 0.48.0
   '@unocss/preset-icons': 0.48.3
+  '@unocss/transformer-directives': 0.48.3
   '@unocss/vite': 0.48.0_vite@4.0.3
+  dayjs: 1.11.7
   eslint: 8.31.0
   eslint-config-prettier: 8.5.0_eslint@8.31.0
   eslint-plugin-svelte3: 4.0.0_6go7qzsvzihesfwmyvq3tnl5qq
@@ -704,6 +708,13 @@ packages:
       css-tree: 2.3.1
     dev: true
 
+  /@unocss/transformer-directives/0.48.3:
+    resolution: {integrity: sha512-lpuTsQaPA2UqYYrAykanS4Ay2vdZgJrxsSfhpTA5DBcr2vlXAGLBRn/PoVYbnKMU1sRbwIqzJbxCKIRjWNDFoQ==}
+    dependencies:
+      '@unocss/core': 0.48.3
+      css-tree: 2.3.1
+    dev: true
+
   /@unocss/vite/0.48.0_vite@4.0.3:
     resolution: {integrity: sha512-j4QS2Ns02J9LRwdpLNiKt+Fo0+YUtvTQ66Xc/xq9s/ErptUwNnXsTCEDQzadXwPw+I8REKakLUve32to8VAd0w==}
     peerDependencies:
@@ -944,6 +955,10 @@ packages:
       balanced-match: 1.0.2
       get-css-data: 2.1.0
     dev: false
+
+  /dayjs/1.11.7:
+    resolution: {integrity: sha512-+Yw9U6YO5TQohxLcIkrXBeY73WP3ejHWVvx8XCk3gxvQDCTEmS48ZrSZCKciI7Bhl/uCMyxYtE9UqRILmFphkQ==}
+    dev: true
 
   /debug/4.3.4:
     resolution: {integrity: sha512-PRWFHuSU3eDtQJPvnNY7Jcket1j0t5OuOsFzPPzsekD52Zl8qUfFIPEiswXqIvHWGVHOgX+7G/vCNNhehwxfkQ==}

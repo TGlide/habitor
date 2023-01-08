@@ -1,9 +1,9 @@
 .btn {
 	--btn-bg: var(--color-pink-7);
-	--btn-bg-hover: var(--color-pink-8);
 	--btn-border: var(--color-pink-3);
 
 	display: inline-flex;
+	justify-content: center;
 	align-items: center;
 	gap: var(--size-1);
 
@@ -44,7 +44,6 @@
 	}
 
 	&:hover {
-		background-color: var(--btn-bg-hover);
 		cursor: pointer;
 		translate: 0 -2px;
 
@@ -63,8 +62,7 @@
 	}
 }
 
-.btn-gray {
-	--btn-bg: var(--color-gray-8);
-	--btn-bg-hover: var(--color-gray-9);
-	--btn-border: var(--color-gray-5);
+.btn-sand {
+	--btn-bg: var(--color-sand-10);
+	--btn-border: var(--color-sand-6);
 }
