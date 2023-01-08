@@ -35,7 +35,7 @@
 	</div>
 	<div class="flex gap-4 mt-auto items-end">
 		<a class="btn btn-sand flex-1" href="/">
-			<div class="i-tabler-chevron-left" />
+			<div class="i-tabler-arrow-left" />
 		</a>
 		<button class="btn flex-3" type="submit">
 			<div class="i-tabler-file" />

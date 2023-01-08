@@ -1,6 +1,8 @@
 .btn {
-	--btn-bg: var(--color-pink-7);
-	--btn-border: var(--color-pink-3);
+	$color: 'pink';
+	$n: 7;
+	--btn-bg: var(--color-#{$color}-#{$n});
+	--btn-border: var(--color-#{$color}-#{$n - 4});
 
 	display: inline-flex;
 	justify-content: center;
@@ -63,6 +65,15 @@
 }
 
 .btn-sand {
-	--btn-bg: var(--color-sand-10);
-	--btn-border: var(--color-sand-6);
+	$color: 'sand';
+	$n: 9;
+	--btn-bg: var(--color-#{$color}-#{$n});
+	--btn-border: var(--color-#{$color}-#{$n - 4});
+}
+
+.btn-gray {
+	$color: 'gray';
+	$n: 9;
+	--btn-bg: var(--color-#{$color}-#{$n});
+	--btn-border: var(--color-#{$color}-#{$n - 4});
 }

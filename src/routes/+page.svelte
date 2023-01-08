@@ -4,7 +4,7 @@
 	import { objectEntries } from '$utils/object';
 
 	let date = dayjs();
-	let formattedDate = date.format('YYYY-MM-DD');
+	$: formattedDate = date.format('YYYY-MM-DD');
 
 	$: isToday = date.isSame(dayjs(), 'day');
 </script>
@@ -19,7 +19,7 @@
 		{isToday ? 'Today' : date.format('dddd')}
 	</h1>
 	<h2 class="font-display weight-medium text-center color-gray-6 mt-2px">
-		{isToday ? date.format('MMM D') : date.format('ddd, MMM D')}
+		{isToday ? date.format('ddd, MMM D') : date.format('MMM D')}
 	</h2>
 
 	<div class="grid grid-cols-2 gap-2 mt-4">
@@ -35,10 +35,17 @@
 			</div>
 		{/each}
 	</div>
-	<div class="flex items-end mt-auto">
-		<a class="btn w-full" href="add">
+	<div class="flex items-end gap-4 mt-auto">
+		<button class="btn btn-sand flex-1" on:click={() => (date = date.subtract(1, 'days'))}>
+			<div class="i-tabler-chevron-left" />
+		</button>
+		<a class="btn flex-3" href="add">
 			<div class="i-tabler-plus" />
+			New habit
 		</a>
+		<button class="btn btn-sand flex-1" on:click={() => (date = date.add(1, 'days'))}>
+			<div class="i-tabler-chevron-right" />
+		</button>
 	</div>
 </section>
 
