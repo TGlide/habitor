@@ -40,10 +40,16 @@
 					placeholder={randomPick(placeholders)}
 					name="name"
 					required
+					autofocus
 				/>
 			</fieldset>
 		</div>
-		<button class="btn justify-center mt-auto">Create new habit</button>
+		<div class="flex gap-4 mt-auto items-end">
+			<a class="btn btn-gray justify-center flex-1" href="/">
+				<div class="i-tabler-chevron-left" />
+			</a>
+			<button class="btn justify-center flex-2" type="submit">Create new habit</button>
+		</div>
 	</form>
 </section>
 
