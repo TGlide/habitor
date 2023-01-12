@@ -24,7 +24,7 @@
 		<fieldset>
 			<label for="name" class="weight-medium">I want to</label>
 			<input
-				class="block mt-2 border-pink-2 border-2px border-solid p-1 rounded-sm p-2 w-full"
+				class="input"
 				type="text"
 				placeholder={randomPick(placeholders)}
 				name="name"

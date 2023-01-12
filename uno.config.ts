@@ -16,6 +16,17 @@ const config: VitePluginConfig = {
 	],
 	// eslint-disable-next-line @typescript-eslint/no-explicit-any
 	transformers: [transformerDirectives() as any],
+	variants: [
+		// hover:
+		(matcher) => {
+			if (!matcher.startsWith('hover:')) return matcher;
+			return {
+				// slice `hover:` prefix and passed to the next variants and rules
+				matcher: matcher.slice(6),
+				selector: (s) => `${s}:hover`,
+			};
+		},
+	],
 };
 
 export default config;

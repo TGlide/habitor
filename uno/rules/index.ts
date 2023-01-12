@@ -10,6 +10,8 @@ import { placement } from './placement';
 import { position } from './position';
 import { textAlign } from './textAlign';
 import { typography } from './typography';
+import { opacity } from './opacity';
+import { cursor } from './cursor';
 
 // TODO: Implement border rules
 
@@ -26,4 +28,6 @@ export default {
 	align,
 	placement,
 	border,
+	opacity,
+	cursor,
 };

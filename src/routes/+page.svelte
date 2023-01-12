@@ -25,7 +25,13 @@
 	<div class="grid grid-cols-2 gap-2 mt-4">
 		{#each objectEntries($habits) as [id, habit] (id)}
 			<div class="habit">
-				<h3 class="fs-1 weight-semibold">{habit.name}</h3>
+				<div class="flex justify-between items-center">
+					<h3 class="fs-1 weight-semibold">{habit.name}</h3>
+					<button
+						class="i-tabler-trash color-red-5 op-75 hover:op-100 cursor-pointer"
+						on:click={() => habits.remove(id)}
+					/>
+				</div>
 				<input
 					type="checkbox"
 					class="checkbox"

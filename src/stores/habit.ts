@@ -29,6 +29,13 @@ function createHabitStore() {
 		});
 	}
 
+	function remove(id: string) {
+		store.update((habits) => {
+			delete habits[id];
+			return habits;
+		});
+	}
+
 	function toggleCheck(id: string, date: string) {
 		store.update((habits) => {
 			if (habits[id]) {
@@ -43,6 +50,7 @@ function createHabitStore() {
 		...store,
 		add,
 		toggleCheck,
+		remove,
 	};
 }
 

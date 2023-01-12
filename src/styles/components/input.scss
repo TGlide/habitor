@@ -24,3 +24,22 @@
 		}
 	}
 }
+
+.input {
+	display: block;
+	margin-top: var(--size-2);
+	border: 2px solid var(--color-sand-4);
+	border-radius: var(--radius-sm);
+	padding: var(--size-2);
+	width: 100%;
+
+	transition: 100ms ease;
+
+	&:hover {
+		border-color: var(--color-sand-1);
+	}
+
+	&:focus:not(:hover) {
+		border-color: var(--color-sand-2);
+	}
+}
