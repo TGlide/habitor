@@ -45,29 +45,22 @@
 		z-index: -1;
 	}
 
-	&:not(:disabled) {
-		&:hover {
-			cursor: pointer;
-			translate: 0 -2px;
+	&:hover {
+		cursor: pointer;
+		translate: 0 -2px;
 
-			&::before {
-				translate: 0 4px;
-			}
-		}
-
-		&:active {
-			border-bottom-width: 1px;
-			translate: 0 1px;
-
-			&::before {
-				translate: 0 1px;
-			}
+		&::before {
+			translate: 0 4px;
 		}
 	}
 
-	&:disabled {
-		opacity: 0.5;
-		cursor: not-allowed;
+	&:active {
+		border-bottom-width: 1px;
+		translate: 0 1px;
+
+		&::before {
+			translate: 0 1px;
+		}
 	}
 }
 

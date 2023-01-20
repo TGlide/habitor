@@ -1,7 +1,0 @@
-<?xml version='1.0' encoding='utf-8'?>
-<resources>
-    <string name="app_name">habitor</string>
-    <string name="title_activity_main">habitor</string>
-    <string name="package_name">com.thomasglopes.habitor</string>
-    <string name="custom_url_scheme">com.thomasglopes.habitor</string>
-</resources>

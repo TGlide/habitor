@@ -49,11 +49,7 @@
 			<div class="i-tabler-leaf" />
 			New habit
 		</a>
-		<button
-			class="btn btn-sand flex-1"
-			disabled={isToday}
-			on:click={() => (date = date.add(1, 'days'))}
-		>
+		<button class="btn btn-sand flex-1" on:click={() => (date = date.add(1, 'days'))}>
 			<div class="i-tabler-chevron-right" />
 		</button>
 	</div>
